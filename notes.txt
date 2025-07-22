@@ -1,0 +1,6 @@
+REACT HOOKS
+
+USESTATE
+> returns an array with 2 elements: the current state value, and a function that we can use to update the state
+> useState() preserves the values between the renders
+> state update triggers re-render
