@@ -11,3 +11,10 @@ USESTATE
 > returns an array with 2 elements: the current state value, and a function that we can use to update the state
 > useState() preserves the values between the renders
 > state update triggers re-render
+
+if you want to update the state immediately and synchronously, u can pass a fxn to setState that receives the previous state as an argument and returns the new state e.g 
+
+setState((prevState) => {
+    return {...prevState, value: newValue}
+})
+
