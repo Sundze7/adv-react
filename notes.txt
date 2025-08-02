@@ -8,6 +8,7 @@ Generally hooks,
 > set functions don't update state immediately
 
 USESTATE
+
 > returns an array with 2 elements: the current state value, and a function that we can use to update the state
 > useState() preserves the values between the renders
 > state update triggers re-render
@@ -18,3 +19,10 @@ setState((prevState) => {
     return {...prevState, value: newValue}
 })
 
+USEEFFECT
+
+> Allows u to perform side effects in fxn components e.g subscription, fetching data, direct DOM update, event listeners, timers, etc.
+> it accepts 2 args: a cb fxn and a dependency array (optional)
+> Runs on each render (initial and re-render)
+> cb fxn cannot return a promise (so can't make it async)
+if dependency array empty [], it runs only on initial render.
