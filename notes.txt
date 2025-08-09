@@ -27,3 +27,5 @@ USEEFFECT
 > cb fxn cannot return a promise (so can't make it async)
 if dependency array empty [], it runs only on initial render.
 > in a case where u have multiple conditionals, place useEffect above them ans not below.
+
+> setInterval() returns an index by default
