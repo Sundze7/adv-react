@@ -1,4 +1,4 @@
-import Starter from "./tutorial/03-conditional-rendering/02-mutiple-return-fetch-data";
+import Starter from "./tutorial/03-conditional-rendering/04-toggle-challenge";
 import "./index.css";
 function App() {
   return (
