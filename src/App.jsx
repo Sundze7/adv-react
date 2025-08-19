@@ -1,6 +1,5 @@
-import Starter from "./tutorial/02-useEffect/03-fetch-data";
+import Starter from "./tutorial/03-conditional-rendering/02-mutiple-return-fetch-data";
 import "./index.css";
-
 function App() {
   return (
     <div className="container">
