@@ -9,4 +9,5 @@ export const people = [
   { id: 1, name: "bob", nickName: "Stud Muffin" },
   { id: 2, name: "peter" },
   { id: 3, name: "oliver", images: [{ small: { url: "####" } }] },
+  { id: 4, name: "David" },
 ];

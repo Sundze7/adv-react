@@ -1,9 +1,9 @@
-import Starter from "./tutorial/02-useEffect/04-cleanup-function";
-import "./index.css";
+import List from "./tutorial/04-leverage-javascript/list";
 function App() {
   return (
     <div className="container">
-      <Starter />
+      <h1>Leverage Javascript</h1>
+      <List />
     </div>
   );
 }
