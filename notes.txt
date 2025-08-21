@@ -26,3 +26,4 @@ USEEFFECT
 > Runs on each render (initial and re-render)
 > cb fxn cannot return a promise (so can't make it async)
 if dependency array empty [], it runs only on initial render.
+> in a case where u have multiple conditionals, place useEffect above them ans not below.
