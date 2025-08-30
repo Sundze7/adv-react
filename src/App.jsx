@@ -1,4 +1,4 @@
-import Starter from "./tutorial/05-forms/01-controlled-inputs";
+import Starter from "./tutorial/05-forms/02-user-challenge";
 function App() {
   return (
     <div className="container">
