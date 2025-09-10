@@ -1,4 +1,4 @@
-import Starter from "./tutorial/05-forms/04-other-inputs";
+import Starter from "./tutorial/05-forms/05-form-data-api";
 function App() {
   return (
     <div className="container">
