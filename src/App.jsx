@@ -1,4 +1,4 @@
-import Starter from "./tutorial/07-custom-hooks/01-toggle";
+import Starter from "./tutorial/07-custom-hooks/02-fetch-data";
 function App() {
   return (
     <div className="container">
