@@ -1,5 +1,6 @@
 import avatar from "../../assets/avatar.png";
 const Person = ({ name, nickName = "Shikantia", images }) => {
+  // optional chaining
   // const img = images?.[0]?.small?.url || avatar;
 
   // Or using the 'Nullish Coalescing Operator ??

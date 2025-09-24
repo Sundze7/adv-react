@@ -1,4 +1,4 @@
-import Starter from "./tutorial/07-custom-hooks/02-fetch-data";
+import Starter from "./tutorial/08-context-api/01-navbar";
 function App() {
   return (
     <div className="container">
