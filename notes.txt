@@ -35,3 +35,7 @@ USEREF()
 - Does not trigger re-render
 - Preserves the value between renders
 - targets DOM nodes/elements
+
+CONTEXT API
+
+> used to pass props from Grandparent to child, without passing through the parent. Hence no need for prop-drilling  

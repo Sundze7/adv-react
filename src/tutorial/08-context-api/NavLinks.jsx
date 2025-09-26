@@ -1,6 +1,6 @@
 import UserContainer from "./UserContainer";
 
-function NavLinks({ user, logout }) {
+function NavLinks() {
   return (
     <div className="nav-container">
       <ul className="nav-links">
@@ -13,7 +13,7 @@ function NavLinks({ user, logout }) {
       </ul>
 
       {/* prop drilling */}
-      <UserContainer user={user} logout={logout} />
+      <UserContainer />
     </div>
   );
 }
