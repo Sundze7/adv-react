@@ -1,8 +1,11 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import NavLinks from "./NavLinks";
 
 // passing down pros without prop-drilling
 export const NavbarContext = createContext();
+
+//custom hook
+export const useAppContext = () => useContext(NavbarContext);
 
 function Navbar() {
   const [user, setUser] = useState({ name: "bob" });
