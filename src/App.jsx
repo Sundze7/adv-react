@@ -1,4 +1,4 @@
-import Starter from "./tutorial/08-context-api/01-navbar";
+import Starter from "./tutorial/09-useReducer/01-useReducer";
 function App() {
   return (
     <div className="container">

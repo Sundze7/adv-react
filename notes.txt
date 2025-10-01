@@ -39,3 +39,7 @@ USEREF()
 CONTEXT API
 
 > used to pass props from Grandparent to child, without passing through the parent. Hence no need for prop-drilling  
+
+USEREDUCER()
+
+> Can think of it as a light version of redux
