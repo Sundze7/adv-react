@@ -11,6 +11,9 @@ const ReducerBasics = () => {
   const clearAllItems = () => {
     setPeople([]);
   };
+  const resetList = () => {
+    setPeople(data);
+  };
 
   return (
     <div>
@@ -20,20 +23,35 @@ const ReducerBasics = () => {
         return (
           <div key={id}>
             <h4>{name}</h4>
-            <button type="button" onClick={() => removeItem(id)}>
-              remove
+            <button
+              type="button"
+              style={{ padding: "0.2rem" }}
+              onClick={() => removeItem(id)}
+            >
+              remove {name}
             </button>
           </div>
         );
       })}
-      <button
-        type="button"
-        style={{ marginTop: "2rem" }}
-        className="btn"
-        onClick={clearAllItems}
-      >
-        clear items
-      </button>
+      {people.length < 1 ? (
+        <button
+          type="button"
+          style={{ marginTop: "2rem" }}
+          className="btn"
+          onClick={resetList}
+        >
+          reset list
+        </button>
+      ) : (
+        <button
+          type="button"
+          style={{ marginTop: "2rem" }}
+          className="btn"
+          onClick={clearAllItems}
+        >
+          clear list
+        </button>
+      )}
     </div>
   );
 };
