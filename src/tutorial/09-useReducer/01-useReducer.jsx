@@ -1,31 +1,44 @@
-import { useState } from "react";
-import { data } from "../../../data";
+import { useReducer, useState } from "react";
+import { data, people } from "../../../data";
+
+const defaultState = {
+  people: data,
+};
+
+// fxn which controls the app state
+const reducer = (state, action) => {
+  if (action.type === "CLEAR_LIST") {
+    return { ...state, people: [] };
+  }
+};
 
 const ReducerBasics = () => {
-  const [people, setPeople] = useState(data);
+  const [state, dispatch] = useReducer(reducer, defaultState);
 
   const removeItem = (id) => {
-    const newPeople = people.filter((person) => person.id !== id);
-    setPeople(newPeople);
+    // const newPeople = people.filter((person) => person.id !== id);
+    // setPeople(newPeople);
   };
   const clearAllItems = () => {
-    setPeople([]);
+    dispatch({ type: "CLEAR_LIST" });
+    // setPeople([]);
   };
   const resetList = () => {
-    setPeople(data);
+    // setPeople(data);
   };
+  console.log(state);
 
   return (
     <div>
-      {people.map((person) => {
+      {state.people.map((person) => {
         const { id, name } = person;
         // console.log(person);
         return (
           <div key={id}>
-            <h4>{name}</h4>
+            <h4>{name.toUpperCase()}</h4>
             <button
               type="button"
-              style={{ padding: "0.2rem" }}
+              style={{ padding: "0.2rem", marginBottom: "1rem" }}
               onClick={() => removeItem(id)}
             >
               remove {name}
@@ -33,10 +46,10 @@ const ReducerBasics = () => {
           </div>
         );
       })}
-      {people.length < 1 ? (
+      {state.people.length < 1 ? (
         <button
           type="button"
-          style={{ marginTop: "2rem" }}
+          style={{ marginTop: "1rem" }}
           className="btn"
           onClick={resetList}
         >
@@ -45,7 +58,7 @@ const ReducerBasics = () => {
       ) : (
         <button
           type="button"
-          style={{ marginTop: "2rem" }}
+          style={{ marginTop: "1rem" }}
           className="btn"
           onClick={clearAllItems}
         >
