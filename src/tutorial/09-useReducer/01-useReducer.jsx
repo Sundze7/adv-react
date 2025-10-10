@@ -1,13 +1,10 @@
 import { useReducer } from "react";
 import { data } from "../../../data";
+import { CLEAR_LIST, REMOVE_LIST, RESET_LIST } from "./action";
 
 const defaultState = {
   people: data,
 };
-
-const CLEAR_LIST = "CLEAR_LIST";
-const RESET_LIST = "RESET_LIST";
-const REMOVE_LIST = "REMOVE_LIST";
 
 // fxn which controls the app state
 const reducer = (state, action) => {
