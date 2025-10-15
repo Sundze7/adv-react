@@ -1,4 +1,4 @@
-import Starter from "./tutorial/09-useReducer/01-useReducer";
+import Starter from "./tutorial/10-performance/index";
 function App() {
   return (
     <div className="container">
