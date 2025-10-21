@@ -1,4 +1,4 @@
-import Starter from "./tutorial/10-performance/index";
+import Starter from "./tutorial/02-useEffect/03-fetch-data";
 function App() {
   return (
     <div className="container">

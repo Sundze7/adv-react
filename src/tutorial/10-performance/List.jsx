@@ -1,4 +1,6 @@
+import { memo } from "react";
 import Person from "../04-leverage-javascript/person";
+
 function List({ people }) {
   return (
     <div>
@@ -8,4 +10,4 @@ function List({ people }) {
     </div>
   );
 }
-export default List;
+export default memo(List);
