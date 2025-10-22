@@ -43,3 +43,8 @@ CONTEXT API
 USEREDUCER()
 
 > Can think of it as a light version of redux
+
+MORE
+useMemo(), useCallBack(), memo(), 
+
+useTransition() - lets you update the state without blocking the UI
