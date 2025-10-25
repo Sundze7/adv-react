@@ -1,9 +1,12 @@
-import { useState, useTransition } from "react";
+import { lazy, Suspense, useState, useTransition } from "react";
+
+const SlowComponent = lazy(() => import("./02-slow-compoent"));
 
 function UseTransitionHook() {
   const [text, setText] = useState("");
   const [items, setItems] = useState([]);
   const [isPending, startTransition] = useTransition();
+  const [show, setShow] = useState(false);
 
   const handleChange = (e) => {
     setText(e.target.value);
@@ -44,6 +47,14 @@ function UseTransitionHook() {
           >
             {items}
           </div>
+        )}
+        <button className="btn" onClick={() => setShow(!show)}>
+          toggle
+        </button>
+        {show && (
+          <Suspense fallback={<h4>Loading...</h4>}>
+            <SlowComponent />
+          </Suspense>
         )}
       </section>
     </div>

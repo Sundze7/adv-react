@@ -48,3 +48,6 @@ MORE
 useMemo(), useCallBack(), memo(), 
 
 useTransition() - lets you update the state without blocking the UI
+
+Suspense API (Lazy Loading)
+- allows u to manage the loading state of your components. It povides a way to 'suspend' rendering of a component until some data has been fetched, and display a fallback UI in the meantime. This makes it easier to handle async data loading and provide a smooth user experience in your React app
