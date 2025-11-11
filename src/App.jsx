@@ -1,10 +1,12 @@
+import NavBar from "./reduxFiles/components/NavBar";
+
 // import Starter from "./tutorial/10-performance/01-react-18";
 function App() {
   return (
-    <div className="container">
+    <main className="container">
       {/* <Starter /> */}
-      <h2>Redux Toolkit</h2>
-    </div>
+      <NavBar />
+    </main>
   );
 }
 
