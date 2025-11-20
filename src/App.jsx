@@ -3,6 +3,7 @@ import NavBar from "./reduxFiles/components/NavBar";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { calculateTotals } from "./reduxFiles/features/cart/cartSlice";
+import Modal from "./reduxFiles/components/Modal";
 
 // import Starter from "./tutorial/10-performance/01-react-18";
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <main className="container">
       {/* <Starter /> */}
+      <Modal />
       <NavBar />
       <CartContainer />
     </main>
