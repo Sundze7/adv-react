@@ -7,7 +7,8 @@ import Modal from "./reduxFiles/components/Modal";
 
 // import Starter from "./tutorial/10-performance/01-react-18";
 function App() {
-  const { cartItems } = useSelector((state) => state.cart);
+  const { cartItems } = useSelector((store) => store.cart);
+  const { isOpen } = useSelector((store) => store.modal);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -17,7 +18,7 @@ function App() {
   return (
     <main className="container">
       {/* <Starter /> */}
-      <Modal />
+      {isOpen && <Modal />}
       <NavBar />
       <CartContainer />
     </main>
